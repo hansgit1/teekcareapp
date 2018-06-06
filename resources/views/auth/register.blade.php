@@ -1,7 +1,5 @@
 @extends('layouts.app')
-
-<!-- test comment -->
-<!-- ander comment -->
+// 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -26,6 +24,14 @@
                                 @endif
                             </div>
                         </div>
+
+                        @if ($errors->any())    
+                            <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                            </ul>
+                        @endif
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
@@ -62,7 +68,8 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
-
+                        
+                        <!-- gender -->
                         <div class="form-group row{{ $errors->has('gender') ? ' has-error' : '' }}">
                             <label for="gender" class="col-md-4 control-label text-md-right">Gender</label>
 
@@ -79,17 +86,25 @@
                                 @endif
                             </div>
                         </div>
+                        <!-- gender -->
 
+                        <!-- birthdate -->
                         <div class="form-group row">
-                            <label for="bday" class="col-md-4 control-label text-md-right">Birthday</label>
-                            <form>
-                                <div class="col-md-6">
-                                    <!-- <label for="bday">Enter your birthday:</label> -->
-                                    <input type="date" id="bday" name="bday">
-                                </div>
-                            </form>
+                            <label for="birthdate" class="col-md-4 col-form-label text-md-right">{{ __('Birthdate') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="birthdate" type="text" class="form-control{{ $errors->has('birthdate') ? ' is-invalid' : '' }}" name="birthdate" value="{{ old('birthdate') }}" required autofocus>
+
+                                @if ($errors->has('birthdate'))
+                                    <span class="invalid-feedback">
+                                        <strong>{{ $errors->first('birthdate') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
                         </div>
-                        
+                        <!-- birthdate -->
+
+                        <!-- address -->
                         <div class="form-group row">
                             <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('Address') }}</label>
 
@@ -103,20 +118,23 @@
                                 @endif
                             </div>
                         </div>
+                        <!-- address -->
 
+                        <!-- city -->
                         <div class="form-group row">
                             <label for="city" class="col-md-4 col-form-label text-md-right">{{ __('City') }}</label>
 
                             <div class="col-md-6">
                                 <input id="city" type="text" class="form-control{{ $errors->has('city') ? ' is-invalid' : '' }}" name="city" value="{{ old('city') }}" required autofocus>
 
-                                @if ($errors->has('address'))
+                                @if ($errors->has('city'))
                                     <span class="invalid-feedback">
                                         <strong>{{ $errors->first('city') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
+                        <!-- city -->
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
