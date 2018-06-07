@@ -52,7 +52,7 @@ class RegisterController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'gender' => 'required|integer',
-            'birth_year' => 'required|date',
+            'birthdate' => 'required|date',
             'city' => 'required|string',
             'address' => 'required|string',
             'password' => 'required|string|min:6|confirmed',
@@ -75,6 +75,7 @@ class RegisterController extends Controller
             'birthdate' => $data['birthdate'],
             'address' => $data['address'],
             'city' => $data['city'],
+            'birthdate' =>  $data['birthdate'],
         ]);
     }
 }
