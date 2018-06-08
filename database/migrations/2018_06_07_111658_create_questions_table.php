@@ -18,6 +18,7 @@ class CreateQuestionsTable extends Migration
             $table->timestamps();
             $table->integer('vraag_nummer')->unique();
             $table->string('vraag');
+            $table->string('symptoom');
         });
     }
 

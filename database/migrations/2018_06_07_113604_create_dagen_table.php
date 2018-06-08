@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateResultsTable extends Migration
+class CreateDagenTable extends Migration
 {
     /**
      * Run the migrations.
@@ -16,11 +16,11 @@ class CreateResultsTable extends Migration
         Schema::create('questions', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->integer('resultaat_nummer')->unsigned();
-            $table->foreign('resultaat_nummer')->references('id')->on('user');
+            $table->date('huidige_datum');
+            $table->string('vraag')->unsigned();
+            $table->foreign('vraag')->references('symptoom')->on('questions');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('user');
-            $table->integer('score');
         });
     }
 
@@ -31,6 +31,6 @@ class CreateResultsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('results');
+        Schema::dropIfExists('dagen');
     }
 }
