@@ -15,8 +15,7 @@ class CreateQuestionsTable extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
-            $table->integer('vraag_nummer')->unique();
+            // $table->timestamps();
             $table->string('vraag');
             $table->string('symptoom');
         });

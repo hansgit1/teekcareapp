@@ -13,14 +13,14 @@ class CreateDagenTable extends Migration
      */
     public function up()
     {
-        Schema::create('questions', function (Blueprint $table) {
+        Schema::create('dagen', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->date('huidige_datum');
-            $table->string('vraag')->unsigned();
-            $table->foreign('vraag')->references('symptoom')->on('questions');
-            $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('user');
+            // $table->date('huidige_datum');
+            // $table->string('klacht')->unsigned();
+            // $table->foreign('klacht')->references('symptoom')->on('questions');
+            // $table->integer('user_id')->unsigned();
+            // $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
