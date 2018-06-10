@@ -1,95 +1,140 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="{{ url('/js/jquery.fullPage.js') }}"></script>
+    <script src="{{ url('/js/scroll.js') }}"></script>
 
-        <title>Laravel</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="{{ url('/css/jquery.fullPage.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ url('/css/teekcare.css') }}" />
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+  	<link rel="shortcut icon" href="{{ url ('/img/teek.jpeg') }}"/>
+	
+	<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+	<title>Teek Care</title>
+</head>
+<body>
+	<!-- Entree -->
+<div id="fullpage">
+	<div class="section" id="dokter">
+		<div id="full">
+			<div id="topmenu">
+				<ul>
+					<li><a href="default.asp">Contact</a></li>
+					<li><a href="news.asp">Registreren</a></li>
+					<li><a href="contact.asp">Login</a></li>
+				</ul>
+			</div>
 
-            .full-height {
-                height: 100vh;
-            }
+			<h1 class="typewrite" data-period='100' data-set='["Goedendag.", "Vandaag is het:"]' data-delay='3000' data-loop='false'>
+				</h1>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+				<div id="datum">
+					<p id="dag"></p>
+					<p id="streepje">-</p>
+					<p id="maand"></p>
+					<p id="streepje">-</p>
+					<p id="jaar"></p>
+				</div>
 
-            .position-ref {
-                position: relative;
-            }
+			<div id="home">
+				<h1 class="title" id="top"></h1>
+				<a class="smoothScroll" href="#slider_container">VUL UW DAGBOEK IN</a>
+			</div>
+		</div>
+	</div>
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+	<div class="section">
+		<div class="slide">
+			<div id="vraag_cf" class="container-fluid">
+				<div class="container">
+					<div class="row">
 
-            .content {
-                text-align: center;
-            }
+						<div id="slider_container" class="col-12">
 
-            .title {
-                font-size: 84px;
-            }
+							<!--vraag-->
+							<h2>Heeft u haaruitval?</h2>
+							<br>
+							<input type="range" min="0" max="10" value="1" id="slider" class="slider">
+							<h4 id="demop">Waarde: <span id="demo"></span></h4>
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+						</div>
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
+					</div>
+				</div>
+			</div>
+		</div>
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+		<div class="slide">
+			<div id="vraag_cf" class="container-fluid">
+				<div class="container">
+					<div class="row">
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
+						<div id="slider_container" class="col-12">
+
+							<!--vraag-->
+							<h2>Heeft u haaruitval?</h2>
+							<br>
+							<input type="range" min="0" max="10" value="1" id="slider" class="slider">
+							<h4 id="demop">Waarde: <span id="demo"></span></h4>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="slide">
+			<div id="vraag_cf" class="container-fluid">
+				<div class="container">
+					<div class="row">
+
+						<div id="slider_container" class="col-12">
+
+							<!--vraag-->
+							<h2>Heeft u haaruitval?</h2>
+							<br>
+							<input type="range" min="0" max="10" value="1" id="slider" class="slider">
+							<h4 id="demop">Waarde: <span id="demo"></span></h4>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="slide">
+			<div id="vraag_cf" class="container-fluid">
+				<div class="container">
+					<div class="row">
+
+						<div id="slider_container" class="col-12">
+
+							<!--vraag-->
+							<h2>Heeft u haaruitval?</h2>
+							<br>
+							<input type="range" min="0" max="10" value="1" id="slider" class="slider">
+							<h4 id="demop">Waarde: <span id="demo"></span></h4>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+	 <script src="{{ asset('js/teekcare.js') }}"></script>
+</body>
 </html>
