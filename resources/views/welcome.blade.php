@@ -38,8 +38,19 @@
 	  				<p id="streepje">-</p>
 	  				<p id="jaar"></p>
 	  			</div>
+					
+				  @if (Route::has('login'))
+                    @auth
+						<button id="dagboekButton"><span>VUL UW DAGBOEK IN</span></button>
+                    @else
+					<a href="{{ route('login') }}"><button id="dagboekButton" <span>VUL UW DAGBOEK IN</span></button></a>
+					</div>
+                    @endauth
+               
+            	@endif
 
-					<button id="dagboekButton"><span>VUL UW DAGBOEK IN</span></button>
+					
+				
 				</div>
     </div>
 	</div>
