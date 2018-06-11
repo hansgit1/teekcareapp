@@ -1,140 +1,140 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="{{ url('/js/jquery.fullPage.js') }}"></script>
-    <script src="{{ url('/js/scroll.js') }}"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" type="text/css" href="{{ url('/css/jquery.fullPage.css') }}" />
-	<link rel="stylesheet" type="text/css" href="{{ url('/css/teekcare.css') }}" />
-
-  	<link rel="shortcut icon" href="{{ url ('/img/teek.jpeg') }}"/>
-	
-	<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
-
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 	<title>Teek Care</title>
 </head>
+
 <body>
 	<!-- Entree -->
 <div id="fullpage">
+
 	<div class="section" id="dokter">
-		<div id="full">
-			<div id="topmenu">
-				<ul>
-					<li><a href="default.asp">Contact</a></li>
-					<li><a href="news.asp">Registreren</a></li>
-					<li><a href="contact.asp">Login</a></li>
-				</ul>
-			</div>
+		<div id="topmenu">
+			<ul>
+				<li><a href="default.asp">CONTACT</a></li>
+				<li><a href="contact.asp">RESULTATEN</a></li>
+				<li><a href="news.asp">REGISTREREN</a></li>
+				<li><a href="contact.asp">LOGIN</a></li>
+			</ul>
+		</div>
 
-			<h1 class="typewrite" data-period='100' data-set='["Goedendag.", "Vandaag is het:"]' data-delay='3000' data-loop='false'>
-				</h1>
+	<div id="tekst">
+	<h1> Medisch <br> Dagboek	</h1>
+	</div>
 
-				<div id="datum">
-					<p id="dag"></p>
-					<p id="streepje">-</p>
-					<p id="maand"></p>
-					<p id="streepje">-</p>
-					<p id="jaar"></p>
+    <div id="card">
+			<div id="content">
+	  		<h1 class="typewrite" data-period='100' data-set='["Goedendag", "Vandaag is het:"]' data-delay='3000' data-loop='false'></h1>
+	  			<div id="datum">
+	  				<p id="dag"></p>
+	  				<p id="streepje">-</p>
+	  				<p id="maand"></p>
+	  				<p id="streepje">-</p>
+	  				<p id="jaar"></p>
+	  			</div>
+
+					<button id="dagboekButton"><span>VUL UW DAGBOEK IN</span></button>
 				</div>
+    </div>
+	</div>
 
-			<div id="home">
-				<h1 class="title" id="top"></h1>
-				<a class="smoothScroll" href="#slider_container">VUL UW DAGBOEK IN</a>
+	<div class="section">
+    <div class="slide">
+      <div class="slider_container">
+        <!--vraag 1-->
+        <h2>Heeft u haaruitval?</h2>
+        <br>
+				<input type="range" min="0" max="10" value="1" id="myRange" class="slider">
+        <h4 id="demop">Waarde: <span id="demo"></span></h4>
+
+				<button class="volgendeVraagButton"><span>Volgende vraag</span></button>
+      </div>
+		</div>
+
+    <div class="slide">
+      <div class="slider_container">
+        <!--vraag 2-->
+        <h2>Heeft u haaruitval?</h2>
+        <br>
+				<input type="range" min="0" max="10" value="1" id="myRange2" class="slider">
+        <h4 id="demop">Waarde: <span id="demo2"></span></h4>
+
+        <button class="volgendeVraagButton"><span>Volgende vraag</span></button>
+      </div>
+		</div>
+
+    <div class="slide">
+      <div class="slider_container">
+        <!--vraag 3-->
+        <h2>Heeft u haaruitval?</h2>
+        <br>
+				<input type="range" min="0" max="10" value="1" id="myRange3" class="slider">
+        <h4 id="demop">Waarde: <span id="demo3"></span></h4>
+
+        <button class="volgendeVraagButton"><span>Volgende vraag</span></button>
+      </div>
+		</div>
+
+		<div class="slide">
+			<div class="slider_container">
+				<!--vraag-->
+				<h2>Einde test</h2>
+				<img src="img/tick.png"></img>
+				<br>
+				<button id="inleverenResultaten"><span>Inleveren testresultaten</span></button>
 			</div>
 		</div>
 	</div>
 
 	<div class="section">
-		<div class="slide">
-			<div id="vraag_cf" class="container-fluid">
-				<div class="container">
-					<div class="row">
+		<div id="resultaat">
+			<div id="rapport">
+				<h1 id="medischrapport">Medisch Rapport</h1>
 
-						<div id="slider_container" class="col-12">
+				<table id="patient">
+					<tr>
+						<th colspan="2">Patientinformatie</th>
+					</tr>
 
-							<!--vraag-->
-							<h2>Heeft u haaruitval?</h2>
-							<br>
-							<input type="range" min="0" max="10" value="1" id="slider" class="slider">
-							<h4 id="demop">Waarde: <span id="demo"></span></h4>
+					<tr>
+						<td>Naam: Jeroen van Marsbergen</td>
+						<td>Datum: 8 juni 2018</td>
+					</tr>
 
-						</div>
+					<tr>
+						<td>Geslacht: Extreem mannelijk</td>
+						<td>Geboortedatum: 12-11-1998</td>
+					</tr>
 
-					</div>
-				</div>
-			</div>
-		</div>
+					<tr>
+						<td>Adres: Aalsmeer</td>
+						<td>Huisarts: Dr.Feijen</td>
+					</tr>
 
-		<div class="slide">
-			<div id="vraag_cf" class="container-fluid">
-				<div class="container">
-					<div class="row">
+					<tr>
+						<th colspan="2">Uitslag Lymedagboek</th>
+					</tr>
 
-						<div id="slider_container" class="col-12">
-
-							<!--vraag-->
-							<h2>Heeft u haaruitval?</h2>
-							<br>
-							<input type="range" min="0" max="10" value="1" id="slider" class="slider">
-							<h4 id="demop">Waarde: <span id="demo"></span></h4>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="slide">
-			<div id="vraag_cf" class="container-fluid">
-				<div class="container">
-					<div class="row">
-
-						<div id="slider_container" class="col-12">
-
-							<!--vraag-->
-							<h2>Heeft u haaruitval?</h2>
-							<br>
-							<input type="range" min="0" max="10" value="1" id="slider" class="slider">
-							<h4 id="demop">Waarde: <span id="demo"></span></h4>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="slide">
-			<div id="vraag_cf" class="container-fluid">
-				<div class="container">
-					<div class="row">
-
-						<div id="slider_container" class="col-12">
-
-							<!--vraag-->
-							<h2>Heeft u haaruitval?</h2>
-							<br>
-							<input type="range" min="0" max="10" value="1" id="slider" class="slider">
-							<h4 id="demop">Waarde: <span id="demo"></span></h4>
-
-						</div>
-
-					</div>
+					<tr>
+						<td>Griepklachten</td>
+						<td>Pijnklachten</td>
+					</tr>
+				</table>
+				<div id="resultaatButton">
+					<button id="homeButton"><span>Terug naar homepage</span></button>
+					<button onclick="printPDF()" id="pdfbutton"><span>Uitprinten</span></button>
 				</div>
 			</div>
 		</div>
 	</div>
 
 </div>
-
-	 <script src="{{ asset('js/teekcare.js') }}"></script>
+	<script src="js/teekcare.js"></script>
 </body>
 </html>

@@ -1,0 +1,230 @@
+body{
+  background-color: #FAFAFA;
+  font-family: Montserrat;
+}
+
+#topmenu{
+  height: 8%;
+  position: absolute;
+  float: right;
+  right: 0;
+  top: 0;
+}
+
+#topmenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#topmenu li {
+    float: right;
+}
+
+#topmenu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0px 0px 3px rgb(0, 0, 0);
+    background-image: linear-gradient(to left,
+    transparent,
+    transparent 50%,
+    #9dc4b5 50%,
+    #9dc4b5);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .5s ease-in;
+}
+
+#topmenu li a:hover {
+  color: white;
+  text-decoration: none;
+  background-position: 0 0;
+}
+
+#dokter{
+  background: linear-gradient(135deg, rgba(44,44,44,1) 0%,rgba(44,44,44,0.98) 2%,rgba(88, 83, 83, 0.9) 12%,rgba(255, 255, 255, 0) 54%,rgba(255, 255, 255, 0) 67%,rgba(255, 255, 255, 0) 98%),url("../img/dokter.jpg");
+}
+
+#content{
+  margin: 10%;
+  text-align: center;
+}
+
+#card{
+  width: 33%;
+  float: right;
+  margin-right: 5%;
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 2px;
+}
+#tekst{
+  position: absolute;
+  top: 0;
+  left: 40px;
+  color: white;
+  font-size: 72px;
+  text-shadow: 0px 0px 15px rgb(0, 0, 0);
+}
+
+#datum{
+  font-size: 2.125rem;
+  text-align: center;
+  margin-top: 60px;
+  font-weight: bolder;
+}
+#dag,#maand,#jaar,#streepje{
+  display: inline;
+}
+
+button{
+  border-radius: 4px;
+  opacity: 0.75;
+  background-color: #9dc4b5;
+  border-left: 6px solid #92b7a9;
+  border-right: 6px solid #92b7a9;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin: 5px;
+  margin-top: 30px;
+}
+button:hover{
+  font-size: 17px;
+  background-color: #9dc4b5;
+  opacity: 1;
+}
+
+button.volgendeVraagButton {
+  border-radius: 4px;
+  background-color: #9dc4b5;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-top: 30px;
+}
+
+button.volgendeVraagButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button.volgendeVraagButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button.volgendeVraagButton:hover span {
+  padding-right: 25px;
+}
+
+button.volgendeVraagButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.fp-slidesNav.bottom {
+  text-align: center;
+}
+
+.slider_container{
+  text-align: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    width: 40% !important;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #9dc4b5;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #9dc4b5;
+    cursor: pointer;
+}
+
+#resultaat{
+	height: 90%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+#rapport{
+	background-color: #9dc4b5;
+	border: 2px solid #fff0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  height: 100%;
+}
+#medischrapport{
+	color: white;
+	font-weight: bold;
+  text-shadow: 0px 0px 2px rgb(0, 0, 0);
+	text-align: center;
+	margin-top: 5%;
+}
+h6{
+	font-weight: bold;
+}
+#patient{
+	border-collapse: collapse;
+	width: 100%;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  table-layout: fixed;
+}
+#patient th{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	background-color: lightgrey;
+	color: black;
+}
+#patient td{
+	color: black;
+	background-color: white;
+}
+#patient td, #patient th{
+	padding: 8px;
+	border: 1px solid lightgrey;
+}
+#resultaatButton{
+  text-align: center;
+}
+#resultaatButton button{
+  border-radius: 0px !important;
+  border: 0 !important;
+  opacity: 1 !important;
+  background-color: #FFFFFF !important;
+  color: #000000 !important;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
