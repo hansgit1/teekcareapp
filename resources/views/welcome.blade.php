@@ -19,8 +19,8 @@
 			<ul>
 				<li><a href="default.asp">CONTACT</a></li>
 				<li><a href="contact.asp">RESULTATEN</a></li>
-				<li><a href="news.asp">REGISTREREN</a></li>
-				<li><a href="contact.asp">LOGIN</a></li>
+				<li><a href="{{ route('register') }}">REGISTREREN</a></li>
+				<li><a href="{{ route('login') }}">LOGIN</a></li>
 			</ul>
 		</div>
 
