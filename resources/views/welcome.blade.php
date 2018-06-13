@@ -17,12 +17,19 @@
 	<div class="section" id="dokter">
 		<div id="topmenu">
 			<ul>
-				<li><a href="default.asp">CONTACT</a></li>
+			@if (Route::has('login'))
+  		@auth
+				<li><a href="{{ route('logout') }}" >LOGOUT</a></li>
 				<li><a href="contact.asp">RESULTATEN</a></li>
-				<li><a href="{{ route('register') }}">REGISTREREN</a></li>
-				<li><a href="{{ route('login') }}">LOGIN</a></li>
+				<li><a href="default.asp">CONTACT</a></li>
 			</ul>
 		</div>
+        @else
+				<li><a href="{{ route('register') }}">REGISTREREN</a></li>
+				<li><a href="{{ route('login') }}">LOGIN</a></li>
+					</div>
+                  @endauth
+            @endif
 
 	<div id="tekst">
 	<h1> Medisch <br> Dagboek	</h1>
