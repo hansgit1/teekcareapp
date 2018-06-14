@@ -16,6 +16,7 @@
 
 	<div class="section" id="dokter">
 		<div id="topmenu">
+			<nav class="fill">
 			<ul>
 			@if (Route::has('login'))
   		@auth
@@ -23,6 +24,7 @@
 				<li><a href="contact.asp">RESULTATEN</a></li>
 				<li><a href="default.asp">CONTACT</a></li>
 			</ul>
+			</nav>
 		</div>
         @else
 				<li><a href="{{ route('register') }}">REGISTREREN</a></li>
