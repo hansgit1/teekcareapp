@@ -53,7 +53,7 @@ body{
     font-family:Montserrat,sans-serif;
     color:#212529;
     text-align:left;
-    background-color:#f5f8fa
+    background-image: url("../img/lekkerman2.jpeg");
 }
 [tabindex="-1"]:focus{
     outline:0!important
@@ -1648,7 +1648,7 @@ pre code{
     color:#495057;
     background-color:#fff;
     background-clip:padding-box;
-    border:1px solid #ced4da;
+    border:1px solid #8cafa2;
     border-radius:.25rem;
     -webkit-transition:border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
     transition:border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
@@ -2056,13 +2056,13 @@ a.btn.disabled,fieldset:disabled a.btn{
 }
 .btn-primary{
     color:#fff;
-    background-color:#007bff;
-    border-color:#007bff
+    background-color:#9dc4b5;
+    border-color:#9dc4b5;
 }
 .btn-primary:hover{
     color:#fff;
-    background-color:#0069d9;
-    border-color:#0062cc
+    background-color:#8cafa2;
+    border-color:white;
 }
 .btn-primary.focus,.btn-primary:focus{
     -webkit-box-shadow:0 0 0 .2rem rgba(0,123,255,.5);
@@ -2504,15 +2504,14 @@ a.btn.disabled,fieldset:disabled a.btn{
 }
 .btn-link{
     font-weight:400;
-    color:#007bff;
+    color:#9dc4b5;
     background-color:transparent
 }
 .btn-link:hover{
-    color:#0056b3;
+    color:#8cafa2;
     background-color:transparent
 }
 .btn-link.focus,.btn-link:focus,.btn-link:hover{
-    text-decoration:underline;
     border-color:transparent
 }
 .btn-link.focus,.btn-link:focus{
@@ -3350,8 +3349,8 @@ tbody.collapse.show{
         left:auto
     }
     .navbar-expand-md .navbar-nav .nav-link{
-        padding-right:.5rem;
-        padding-left:.5rem
+        padding-right:1.2rem;
+        padding-left:1.2rem
     }
     .navbar-expand-md>.container,.navbar-expand-md>.container-fluid{
         -ms-flex-wrap:nowrap;
@@ -3362,8 +3361,7 @@ tbody.collapse.show{
         display:-ms-flexbox!important;
         display:flex!important;
         -ms-flex-preferred-size:auto;
-        flex-basis:auto
-        background-color: #9dc4b5;
+        flex-basis:auto;
     }
     .navbar-expand-md .navbar-toggler{
         display:none
@@ -3529,10 +3527,14 @@ tbody.collapse.show{
     color:rgba(0,0,0,.9)
 }
 .navbar-light .navbar-nav .nav-link{
-    color:rgba(0,0,0,.5)
+    color:white;
+    text-shadow: 0px 0px 3px rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
 }
 .navbar-light .navbar-nav .nav-link:focus,.navbar-light .navbar-nav .nav-link:hover{
-    color:rgba(0,0,0,.7)
+    color: white;
+    background-color:#92b7a9;
 }
 .navbar-light .navbar-nav .nav-link.disabled{
     color:rgba(0,0,0,.3)
@@ -3554,7 +3556,7 @@ tbody.collapse.show{
     color:rgba(0,0,0,.9)
 }
 .navbar-dark .navbar-brand,.navbar-dark .navbar-brand:focus,.navbar-dark .navbar-brand:hover{
-    color:#fff
+    color:#fff;
 }
 .navbar-dark .navbar-nav .nav-link{
     color:hsla(0,0%,100%,.5)
@@ -3583,6 +3585,7 @@ tbody.collapse.show{
 }
 .card{
     position:relative;
+    top:10%;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -3592,10 +3595,10 @@ tbody.collapse.show{
     flex-direction:column;
     min-width:0;
     word-wrap:break-word;
-    background-color:#fff;
+    background-color:#FFF;
     background-clip:border-box;
-    border:1px solid rgba(0,0,0,.125);
-    border-radius:.25rem
+    border-radius:5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .card>hr{
     margin-right:0;
@@ -3631,9 +3634,12 @@ tbody.collapse.show{
     margin-left:1.25rem
 }
 .card-header{
-    padding:.75rem 1.25rem;
+    padding:.9rem 1.25rem;
     margin-bottom:0;
     background-color:#9dc4b5;
+    text-align: center;
+    font-weight: bold;
+    color: white;
 }
 .card-header:first-child{
     border-radius:calc(.25rem - 1px) calc(.25rem - 1px) 0 0
@@ -7322,9 +7328,4 @@ a.text-dark:focus,a.text-dark:hover{
     .table-bordered td,.table-bordered th{
         border:1px solid #ddd!important
     }
-}
-.navbar-laravel{
-    background-color:#fff;
-    -webkit-box-shadow:0 2px 4px rgba(0,0,0,.04);
-    box-shadow:0 2px 4px rgba(0,0,0,.04)
 }
