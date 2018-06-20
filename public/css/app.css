@@ -3524,7 +3524,11 @@ tbody.collapse.show{
     bottom:100%
 }
 .navbar-light .navbar-brand,.navbar-light .navbar-brand:focus,.navbar-light .navbar-brand:hover{
+<<<<<<< HEAD
     color:white;
+=======
+    color:rgba(0,0,0,.9)
+>>>>>>> 6fc6a664a7bd27b585c96bd8bdbdb4625b581ce0
 }
 .navbar-light .navbar-nav .nav-link{
     color:white;
@@ -7328,4 +7332,8 @@ a.text-dark:focus,a.text-dark:hover{
     .table-bordered td,.table-bordered th{
         border:1px solid #ddd!important
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6fc6a664a7bd27b585c96bd8bdbdb4625b581ce0
