@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- CSRF Token -->
+	<meta name="csrf-token" content="{{ csrf_token() }}">
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 
@@ -55,26 +58,30 @@
                     @endauth
                
             	@endif
-
-					
-				
 				</div>
     </div>
 	</div>
-
+	
+	@if (Route::has('login'))
+		@auth
 	<div class="section">
-    <div class="slide">
+		<div class="slide">
       <div class="slider_container">
         <!--vraag 1-->
-        <h2>Heeft u haaruitval?</h2>
+        <!-- <form action="DataController@voegtoe" method = "POST"> -->
+				{!! Form::open(['action' => 'DataController@voegtoe', 'method' => 'POST']) !!}
+				<input type="hidden" name="user_id" value="{{Auth::user()->id}}">
+				<h2>Heeft u haaruitval?</h2>
         <br>
-				<input type="range" min="0" max="10" value="1" id="myRange" class="slider">
+				<input name = "score" type="range" min="0" max="10" value="1" id="myRange" class="slider">
+				<input name = "resultaat_nummer" type="hidden" value="1">
+				<input name = "user_id" type="hidden">
         <h4 id="demop">Waarde: <span id="demo"></span></h4>
-
-				<button class="volgendeVraagButton"><span>Volgende vraag</span></button>
+				
+				<button class="volgendeVraagButton" type="button" data-slide="1" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
-
+		
     <div class="slide">
       <div class="slider_container">
         <!--vraag 2-->
@@ -83,7 +90,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange2" class="slider">
         <h4 id="demop">Waarde: <span id="demo2"></span></h4>
 
-        <button class="volgendeVraagButton"><span>Volgende vraag</span></button>
+        <button class="volgendeVraagButton" type="button" data-slide="2" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -95,7 +102,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange3" class="slider">
         <h4 id="demop">Waarde: <span id="demo3"></span></h4>
 
-        <button class="volgendeVraagButton"><span>Volgende vraag</span></button>
+        <button class="volgendeVraagButton" type="button" data-slide="3" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -105,10 +112,14 @@
 				<h2>Einde test</h2>
 				<img src="img/tick.png"></img>
 				<br>
-				<button id="inleverenResultaten"><span>Inleveren testresultaten</span></button>
+				<!-- <button id="inleverenResultaten" type = 'submit' ><span>Inleveren testresultaten</span></button> -->
+				<button id="inleverenResultaten" type ='submit'><input type = 'hidden' id="inleverenResultaten" name= 'submit' value = 'Inleveren testresultaten'>Inleveren testresultaten<span></span></button>
+				<!-- </form> -->
+				{!! Form::close() !!}
 			</div>
 		</div>
 	</div>
+
 
 	<div class="section">
 		<div id="resultaat">
@@ -120,6 +131,8 @@
 						<th colspan="2">Patientinformatie</th>
 					</tr>
 
+				
+					{{$user->name}}
 					<tr>
 						<td>Naam: Jeroen van Marsbergen</td>
 						<td>Datum: 8 juni 2018</td>
@@ -143,6 +156,8 @@
 						<td>Griepklachten</td>
 						<td>Pijnklachten</td>
 					</tr>
+
+			
 				</table>
 				<div id="resultaatButton">
 					<button id="homeButton"><span>Terug naar homepage</span></button>
@@ -151,7 +166,8 @@
 			</div>
 		</div>
 	</div>
-
+		@endauth
+	@endif
 </div>
 	<script src="js/teekcare.js"></script>
 </body>

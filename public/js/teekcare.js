@@ -5,9 +5,19 @@ $(document).ready(function() {
      controlArrows: false
    });
 
-   $('.volgendeVraagButton').click(()=>{
+  //  $('.volgendeVraagButton').click(()=>{
+  //     $.fn.fullpage.moveSlideRight();
+  //  })
+
+  $('.volgendeVraagButton').on('click', function(e){
+      // e.preventDefault();
+      var target = $(this).data('target');
+      var slide = $(this).data('slide');
+      var value = document.getElementById(target).value;
+      sendPostRequest(slide, value);
       $.fn.fullpage.moveSlideRight();
-   })
+  });
+
 
    $('#dagboekButton').click(function(){
     $.fn.fullpage.moveSectionDown();
@@ -15,6 +25,7 @@ $(document).ready(function() {
 
   $('#inleverenResultaten').click(function(){
     $.fn.fullpage.moveSectionDown();
+    sendPostRequest(slider1.value, slider2.value, slider3.value);
   });
   $('#homeButton').click(function(){
     $.fn.fullpage.moveTo(1);
@@ -51,7 +62,10 @@ $(document).ready(function() {
   slider3.oninput = function() {
     output3.innerHTML = this.value;
   }
+  
+  
 
+  console.log(slider1.value, slider2.value);
    var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {
             var toRotate = elements[i].getAttribute('data-set'),
@@ -118,6 +132,7 @@ var typeWrite = function(el, toRotate, period, delay = 2000, loop = 'true') {
      }
    }
      setTimeout(function() {
+      that    = this;
      that.tick();
    }, that.interval);
 };
@@ -125,3 +140,36 @@ var typeWrite = function(el, toRotate, period, delay = 2000, loop = 'true') {
 function printPDF(){
   window.print();
 }
+
+function sendPostRequest(slider, value) {
+  var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+  var url = $('form').attr('action');
+  var body = {};
+  var uid = $('input[name="user_id"]').attr('value');
+  body._token = CSRF_TOKEN;
+  body.uid = uid;
+  body.slider = {};
+  body.slider.result = slider;
+  body.slider.value = value;
+  console.log(body);
+  $.ajax({
+      /* the route pointing to the post function */
+      url: url,
+      type: 'POST',
+      /* send the csrf-token and the insput to the controller */
+      data: body,
+      dataType: 'JSON',
+      /* remind that 'data' is the response of the AjaxController */
+      success: function (response) { 
+          if(response.status === "success") {
+            // do something with response.message or whatever other data on success
+            console.log(response);
+        } else if(response.status === "error") {
+            // do something with response.message or whatever other data on error
+            console.log(response.message);
+        }
+          
+      }
+  }); 
+}
+

@@ -18,8 +18,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@namen');
+
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+Route::post('voegtoe', '\App\Http\Controllers\DataController@voegtoe');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'DataController@gegevens');
