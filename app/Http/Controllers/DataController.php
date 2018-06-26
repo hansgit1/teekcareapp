@@ -26,12 +26,4 @@ class DataController extends Controller
 
         return response()->json($json, 201);
     }
-
-    public function gegevens()
-    {
-        // $user = new User;
-        $user = User::all();
-
-        return view('welcome', compact('user'));
-    }
 }
