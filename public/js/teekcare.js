@@ -62,6 +62,14 @@ $(document).ready(function() {
   slider3.oninput = function() {
     output3.innerHTML = this.value;
   }
+
+  var slider4 = document.getElementById("myRange4");
+  var output4 = document.getElementById("demo4");
+  output4.innerHTML = slider4.value;
+
+  slider4.oninput = function() {
+    output4.innerHTML = this.value;
+  }
     
   console.log(slider1.value, slider2.value);
    var elements = document.getElementsByClassName('typewrite');

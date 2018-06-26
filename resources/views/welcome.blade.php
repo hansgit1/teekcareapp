@@ -106,6 +106,19 @@
 		</div>
 
 		<div class="slide">
+      <div class="slider_container">
+        <!--vraag 4-->
+        <h2>Heeft u haaruitval?</h2>
+        <br>
+				<input type="range" min="0" max="10" value="1" id="myRange4" class="slider">
+        <h4 id="demop">Waarde: <span id="demo4"></span></h4>
+
+        <button class="volgendeVraagButton" type="button" data-slide="4" data-target="myRange">Volgende vraag</button>
+      </div>
+		</div>
+		
+
+		<div class="slide">
 			<div class="slider_container">
 				<!--vraag-->
 				<h2>Einde test</h2>
@@ -130,7 +143,7 @@
 					
 					<tr>
 						<td>Naam: {{Auth::user()->name}}</td>
-						<td>Datum: {{Auth::user()->created_at}}</td>
+						<td>Datum: {{Auth::user()->created_at->format('m-d-Y')}}</td>
 					</tr>
 
 					<tr>
