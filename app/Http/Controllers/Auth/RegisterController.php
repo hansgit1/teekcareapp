@@ -56,6 +56,7 @@ class RegisterController extends Controller
             'city' => 'required|string',
             'address' => 'required|string',
             'password' => 'required|string|min:6|confirmed',
+            'huisarts' => 'required|string',
         ]);
     }
 
@@ -76,6 +77,7 @@ class RegisterController extends Controller
             'address' => $data['address'],
             'city' => $data['city'],
             'birthdate' =>  $data['birthdate'],
+            'huisarts' =>  $data['huisarts'],
         ]);
     }
 }

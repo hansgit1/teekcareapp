@@ -20,8 +20,9 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->integer('gender');
             $table->date('birthdate');
-            $table->string('address');
+            $table->string('address');            
             $table->string('city');
+            $table->string('huisarts');
             $table->rememberToken();
             $table->timestamps();
         });

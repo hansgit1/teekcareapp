@@ -26,6 +26,7 @@
 				<li><a href="contact.asp">RESULTATEN</a></li>
 				<li><a href="default.asp">CONTACT</a></li>
 			</ul>
+
 		</div>
         @else
 				<li><a href="{{ route('register') }}">REGISTREREN</a></li>
@@ -37,7 +38,6 @@
 	<div id="tekst">
 	<h1> Medisch <br> Dagboek	</h1>
 	</div>
-
     <div id="card">
 			<div id="content">
 	  		<h1 class="typewrite" data-period='100' data-set='["Goedendag", "Vandaag is het:"]' data-delay='3000' data-loop='false'></h1>
@@ -48,7 +48,6 @@
 	  				<p id="streepje">-</p>
 	  				<p id="jaar"></p>
 	  			</div>
-					
 				  @if (Route::has('login'))
                     @auth
 						<button id="dagboekButton"><span>VUL UW DAGBOEK IN</span></button>
@@ -61,7 +60,7 @@
 				</div>
     </div>
 	</div>
-	
+
 	@if (Route::has('login'))
 		@auth
 	<div class="section">
@@ -119,32 +118,38 @@
 			</div>
 		</div>
 	</div>
-
-
+						
 	<div class="section">
 		<div id="resultaat">
 			<div id="rapport">
 				<h1 id="medischrapport">Medisch Rapport</h1>
-				{{$users}}
 				<table id="patient">
-				
 					<tr>
 						<th colspan="2">Patientinformatie</th>
 					</tr>
 					
 					<tr>
-						<td>Naam: Jeroen van Marsbergen</td>
-						<td>Datum: 8 juni 2018</td>
+						<td>Naam: {{Auth::user()->name}}</td>
+						<td>Datum: {{Auth::user()->created_at}}</td>
 					</tr>
 
 					<tr>
-						<td>Geslacht: Extreem mannelijk</td>
-						<td>Geboortedatum: 12-11-1998</td>
+						@if (Auth::user()->gender == 0)
+							<td>Geslacht: Man</td>
+						@else
+							<td>Geslacht: Vrouw</td>
+						@endif
+						
+						<td>Geboortedatum: {{Auth::user()->birthdate}}</td>
+					</tr>
+					<tr>
+						<td>Adres: {{Auth::user()->address}}</td>
+						<td>Huisarts: {{Auth::user()->huisarts}}</td>
 					</tr>
 
 					<tr>
-						<td>Adres: Aalsmeer</td>
-						<td>Huisarts: Dr.Feijen</td>
+						<td>Woonplaats: {{Auth::user()->city}}</td>
+						<td>Email: {{Auth::user()->email}}</td>
 					</tr>
 
 					<tr>
@@ -157,6 +162,7 @@
 					</tr>
 					
 				</table>
+				
 				<div id="resultaatButton">
 					<button id="homeButton"><span>Terug naar homepage</span></button>
 					<button onclick="printPDF()" id="pdfbutton"><span>Uitprinten</span></button>

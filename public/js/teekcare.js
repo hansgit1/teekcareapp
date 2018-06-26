@@ -62,9 +62,7 @@ $(document).ready(function() {
   slider3.oninput = function() {
     output3.innerHTML = this.value;
   }
-  
-  
-
+    
   console.log(slider1.value, slider2.value);
    var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {

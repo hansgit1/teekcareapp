@@ -123,7 +123,7 @@
 
                         <!-- city -->
                         <div class="form-group row">
-                            <label for="city" class="col-md-4 col-form-label text-md-right">{{ __('Stadç') }}</label>
+                            <label for="city" class="col-md-4 col-form-label text-md-right">{{ __('Stad') }}</label>
 
                             <div class="col-md-6">
                                 <input id="city" type="text" class="form-control{{ $errors->has('city') ? ' is-invalid' : '' }}" name="city" value="{{ old('city') }}" required autofocus>
@@ -131,6 +131,22 @@
                                 @if ($errors->has('city'))
                                     <span class="invalid-feedback">
                                         <strong>{{ $errors->first('city') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                        <!-- city -->
+
+                        <!-- huisarts -->
+                        <div class="form-group row">
+                            <label for="city" class="col-md-4 col-form-label text-md-right">{{ __('Huisarts') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="city" type="text" class="form-control{{ $errors->has('huisarts') ? ' is-invalid' : '' }}" name="huisarts" value="{{ old('huisarts') }}" required autofocus>
+
+                                @if ($errors->has('huisarts'))
+                                    <span class="invalid-feedback">
+                                        <strong>{{ $errors->first('huisarts') }}</strong>
                                     </span>
                                 @endif
                             </div>
