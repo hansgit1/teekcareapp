@@ -70,7 +70,9 @@
         <!-- <form action="DataController@voegtoe" method = "POST"> -->
 				{!! Form::open(['action' => 'DataController@voegtoe', 'method' => 'POST']) !!}
 				<input type="hidden" name="user_id" value="{{Auth::user()->id}}">
-        <h2>Hoeveel last heeft u van haaruitval?</h2>
+				@foreach($vraag1 as $vraag1enkel)
+        <h2>{{$vraag1enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input name = "score" type="range" min="0" max="10" value="1" id="myRange" class="slider">
 				<input name = "resultaat_nummer" type="hidden" value="1">
@@ -84,7 +86,9 @@
     <div class="slide">
       <div class="slider_container">
         <!--vraag 2-->
-        <h2>Hoeveel last heeft u van huiduitslag?</h2>
+        @foreach($vraag2 as $vraag2enkel)
+        <h2>{{$vraag2enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange2" class="slider">
         <h4 id="demop">Waarde: <span id="demo2"></span></h4>
@@ -96,7 +100,9 @@
     <div class="slide">
       <div class="slider_container">
         <!--vraag 3-->
-        <h2>Hoeveel last heeft u van onverklaarbare temperatuur-verhogingen of koorts?</h2>
+        @foreach($vraag3 as $vraag3enkel)
+        <h2>{{$vraag3enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange3" class="slider">
         <h4 id="demop">Waarde: <span id="demo3"></span></h4>
@@ -108,7 +114,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 4-->
-        <h2>Hoeveel last heeft u van onverklaarbare koude rillingen?</h2>       
+        @foreach($vraag4 as $vraag4enkel)
+        <h2>{{$vraag4enkel->vraag}}</h2>
+        @endforeach       
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange4" class="slider">
         <h4 id="demop">Waarde: <span id="demo4"></span></h4>
@@ -120,7 +128,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 5-->
-        <h2>Hoeveel last heeft u van een pijnlijke keel?</h2>        
+        @foreach($vraag5 as $vraag5enkel)
+        <h2>{{$vraag5enkel->vraag}}</h2>
+        @endforeach        
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange5" class="slider">
         <h4 id="demop">Waarde: <span id="demo5"></span></h4>
@@ -132,7 +142,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 6-->
-        <h2>Hoeveel last heeft u van kortademigheid?</h2>
+        @foreach($vraag6 as $vraag6enkel)
+        <h2>{{$vraag6enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange6" class="slider">
         <h4 id="demop">Waarde: <span id="demo6"></span></h4>
@@ -144,7 +156,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 7-->
-        <h2>Hoeveel last heeft u van maagklachten?</h2>
+        @foreach($vraag7 as $vraag7enkel)
+        <h2>{{$vraag7enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange7" class="slider">
         <h4 id="demop">Waarde: <span id="demo7"></span></h4>
@@ -156,7 +170,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 8-->
-        <h2>Hoeveel last heeft u van een veranderde stoelgang (obstipatie, diarree)?</h2>
+        @foreach($vraag8 as $vraag8enkel)
+        <h2>{{$vraag8enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange8" class="slider">
         <h4 id="demop">Waarde: <span id="demo8"></span></h4>
@@ -168,7 +184,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 9-->
-        <h2>Hoeveel last heeft u van onverklaarbare gewichtsveranderingen > 3 kg?</h2>
+        @foreach($vraag9 as $vraag9enkel)
+        <h2>{{$vraag9enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange9" class="slider">
         <h4 id="demop">Waarde: <span id="demo9"></span></h4>
@@ -180,7 +198,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 10-->
-        <h2>Hoeveel last heeft u van hartkloppingen, overslaan van het hart?</h2>
+        @foreach($vraag10 as $vraag10enkel)
+        <h2>{{$vraag10enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange10" class="slider">
         <h4 id="demop">Waarde: <span id="demo10"></span></h4>
@@ -192,7 +212,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 11-->
-        <h2>Hoeveel last heeft u van pijn in de borstkas, ribben?</h2>
+        @foreach($vraag11 as $vraag11enkel)
+        <h2>{{$vraag11enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange11" class="slider">
         <h4 id="demop">Waarde: <span id="demo11"></span></h4>
@@ -204,7 +226,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 12-->
-        <h2>Hoeveel last heeft u van pijn en/ of zwelling in gewrichten?</h2>
+        @foreach($vraag12 as $vraag12enkel)
+        <h2>{{$vraag12enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange12" class="slider">
         <h4 id="demop">Waarde: <span id="demo12"></span></h4>
@@ -216,7 +240,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 13-->
-        <h2>Hoeveel last heeft u van pijn in (aanhechting van) spieren en pezen (vgl fibromyalgie)?</h2>
+        @foreach($vraag13 as $vraag13enkel)
+        <h2>{{$vraag13enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange13" class="slider">
         <h4 id="demop">Waarde: <span id="demo13"></span></h4>
@@ -228,7 +254,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 14-->
-        <h2>Hoeveel last heeft u van stijfheid van gewrichten en/of rug?</h2>
+        @foreach($vraag14 as $vraag14enkel)
+        <h2>{{$vraag14enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange14" class="slider">
         <h4 id="demop">Waarde: <span id="demo14"></span></h4>
@@ -240,7 +268,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 15-->
-        <h2>Hoeveel last heeft u van tintelingen, dove plekken, plaatselijk branderige of stekende pijn?</h2>
+        @foreach($vraag15 as $vraag15enkel)
+        <h2>{{$vraag15enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange15" class="slider">
         <h4 id="demop">Waarde: <span id="demo15"></span></h4>
@@ -252,7 +282,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 16-->
-        <h2>Hoeveel last heeft u van spiertrekkingen in het gezicht of elders?</h2>
+        @foreach($vraag16 as $vraag16enkel)
+        <h2>{{$vraag16enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange16" class="slider">
         <h4 id="demop">Waarde: <span id="demo16"></span></h4>
@@ -264,7 +296,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 17-->
-        <h2>Hoeveel last heeft u van spierkrampen, restless legs?</h2>
+        @foreach($vraag17 as $vraag17enkel)
+        <h2>{{$vraag17enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange17" class="slider">
         <h4 id="demop">Waarde: <span id="demo17"></span></h4>
@@ -276,7 +310,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 18-->
-        <h2>Hoeveel last heeft u van dubbelzien, tunnelzicht, moeite met scherp zien?</h2>
+        @foreach($vraag18 as $vraag18enkel)
+        <h2>{{$vraag18enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange18" class="slider">
         <h4 id="demop">Waarde: <span id="demo18"></span></h4>
@@ -288,7 +324,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 19-->
-        <h2>Hoeveel last heeft u van overgevoeligheid voor licht?</h2>
+        @foreach($vraag19 as $vraag19enkel)
+        <h2>{{$vraag19enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange19" class="slider">
         <h4 id="demop">Waarde: <span id="demo19"></span></h4>
@@ -300,7 +338,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 20-->
-        <h2>Hoeveel last heeft u van pijn of jeuk in oren?</h2>
+        @foreach($vraag20 as $vraag20enkel)
+        <h2>{{$vraag20enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange20" class="slider">
         <h4 id="demop">Waarde: <span id="demo20"></span></h4>
@@ -312,7 +352,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 21-->
-        <h2>Hoeveel last heeft u van oorsuizen, zoemen of fluiten?</h2>
+        @foreach($vraag21 as $vraag21enkel)
+        <h2>{{$vraag21enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange21" class="slider">
         <h4 id="demop">Waarde: <span id="demo21"></span></h4>
@@ -324,7 +366,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 22-->
-        <h2>Hoeveel last heeft u van licht in het hoofd, problemen met staan/ lopen?</h2>
+        @foreach($vraag22 as $vraag22enkel)
+        <h2>{{$vraag22enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange22" class="slider">
         <h4 id="demop">Waarde: <span id="demo22"></span></h4>
@@ -336,7 +380,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 23-->
-        <h2>Hoeveel last heeft u van verwardheid, moeite een gedachtespoor vast te houden?</h2>
+        @foreach($vraag23 as $vraag23enkel)
+        <h2>{{$vraag23enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange23" class="slider">
         <h4 id="demop">Waarde: <span id="demo23"></span></h4>
@@ -348,7 +394,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 24-->
-        <h2>Hoeveel last heeft u van oriëntatie problemen (verdwalen, dingen kwijt raken)?</h2>
+        @foreach($vraag24 as $vraag24enkel)
+        <h2>{{$vraag24enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange24" class="slider">
         <h4 id="demop">Waarde: <span id="demo24"></span></h4>
@@ -360,7 +408,9 @@
 		<div class="slide">
       <div class="slider_container">
         <!--vraag 25-->
-        <h2>Hoeveel last heeft u van geïrriteerde blaas, niet kunnen ophouden van urine of juist moeilijk kunnen plassen?</h2>
+        @foreach($vraag25 as $vraag25enkel)
+        <h2>{{$vraag25enkel->vraag}}</h2>
+        @endforeach
         <br>
 				<input type="range" min="0" max="10" value="1" id="myRange25" class="slider">
         <h4 id="demop">Waarde: <span id="demo25"></span></h4>

@@ -70,7 +70,177 @@ $(document).ready(function() {
   slider4.oninput = function() {
     output4.innerHTML = this.value;
   }
-    
+
+  var slider5 = document.getElementById("myRange5");
+  var output5 = document.getElementById("demo5");
+  output5.innerHTML = slider5.value;
+
+  slider5.oninput = function() {
+    output5.innerHTML = this.value;
+  }
+
+  var slider6 = document.getElementById("myRange6");
+  var output6 = document.getElementById("demo6");
+  output6.innerHTML = slider6.value;
+
+  slider6.oninput = function() {
+    output6.innerHTML = this.value;
+  }
+
+  var slider7 = document.getElementById("myRange7");
+  var output7 = document.getElementById("demo7");
+  output7.innerHTML = slider7.value;
+
+  slider7.oninput = function() {
+    output7.innerHTML = this.value;
+  }
+
+  var slider8 = document.getElementById("myRange8");
+  var output8 = document.getElementById("demo8");
+  output8.innerHTML = slider8.value;
+
+  slider8.oninput = function() {
+    output8.innerHTML = this.value;
+  }
+
+  var slider9 = document.getElementById("myRange9");
+  var output9 = document.getElementById("demo9");
+  output9.innerHTML = slider9.value;
+
+  slider9.oninput = function() {
+    output9.innerHTML = this.value;
+  }
+
+  var slider10 = document.getElementById("myRange10");
+  var output10 = document.getElementById("demo10");
+  output10.innerHTML = slider10.value;
+
+  slider10.oninput = function() {
+  output10.innerHTML = this.value;
+  }
+
+  var slider11 = document.getElementById("myRange11");
+  var output11 = document.getElementById("demo11");
+  output11.innerHTML = slider11.value;
+
+  slider11.oninput = function() {
+  output11.innerHTML = this.value;
+  }
+  
+  var slider12 = document.getElementById("myRange12");
+  var output12 = document.getElementById("demo12");
+  output12.innerHTML = slider12.value;
+
+  slider12.oninput = function() {
+  output12.innerHTML = this.value;
+  }
+
+  var slider13 = document.getElementById("myRange13");
+  var output13 = document.getElementById("demo13");
+  output13.innerHTML = slider13.value;
+
+  slider13.oninput = function() {
+  output13.innerHTML = this.value;
+  }
+
+  var slider14 = document.getElementById("myRange14");
+  var output14 = document.getElementById("demo14");
+  output14.innerHTML = slider14.value;
+
+  slider14.oninput = function() {
+  output14.innerHTML = this.value;
+  }
+
+  var slider15 = document.getElementById("myRange15");
+  var output15 = document.getElementById("demo15");
+  output15.innerHTML = slider15.value;
+
+  slider15.oninput = function() {
+  output15.innerHTML = this.value;
+  }
+
+  var slider16 = document.getElementById("myRange16");
+  var output16 = document.getElementById("demo16");
+  output16.innerHTML = slider16.value;
+
+  slider16.oninput = function() {
+  output16.innerHTML = this.value;
+  }
+
+  var slider17 = document.getElementById("myRange17");
+  var output17 = document.getElementById("demo17");
+  output17.innerHTML = slider17.value;
+
+  slider17.oninput = function() {
+  output17.innerHTML = this.value;
+  }
+
+  var slider18 = document.getElementById("myRange18");
+  var output18 = document.getElementById("demo18");
+  output18.innerHTML = slider18.value;
+
+  slider18.oninput = function() {
+  output18.innerHTML = this.value;
+  }
+
+  var slider19 = document.getElementById("myRange19");
+  var output19 = document.getElementById("demo19");
+  output19.innerHTML = slider19.value;
+
+  slider19.oninput = function() {
+  output19.innerHTML = this.value;
+  }
+
+  var slider20 = document.getElementById("myRange20");
+  var output20 = document.getElementById("demo20");
+  output20.innerHTML = slider20.value;
+
+  slider20.oninput = function() {
+  output20.innerHTML = this.value;
+  }
+
+  var slider21 = document.getElementById("myRange21");
+  var output21 = document.getElementById("demo21");
+  output21.innerHTML = slider21.value;
+
+  slider21.oninput = function() {
+  output21.innerHTML = this.value;
+  }
+
+  var slider22 = document.getElementById("myRange22");
+  var output22 = document.getElementById("demo22");
+  output22.innerHTML = slider22.value;
+
+  slider22.oninput = function() {
+  output22.innerHTML = this.value;
+  }
+
+  var slider23 = document.getElementById("myRange23");
+  var output23 = document.getElementById("demo23");
+  output23.innerHTML = slider23.value;
+
+  slider23.oninput = function() {
+  output23.innerHTML = this.value;
+  }
+
+  var slider24 = document.getElementById("myRange24");
+  var output24 = document.getElementById("demo24");
+  output24.innerHTML = slider24.value;
+
+  slider24.oninput = function() {
+  output24.innerHTML = this.value;
+  }
+
+  var slider25 = document.getElementById("myRange25");
+  var output25 = document.getElementById("demo25");
+  output25.innerHTML = slider25.value;
+
+  slider25.oninput = function() {
+  output25.innerHTML = this.value;
+  }
+
+  
+
   console.log(slider1.value, slider2.value);
    var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {
