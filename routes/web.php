@@ -31,4 +31,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'UserController@gegevens');
-Route::get('/', 'QuestionsController@questions');
+// Route::get('/', 'QuestionsController@questions');

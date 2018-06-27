@@ -89,7 +89,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange2" class="slider">
         <h4 id="demop">Waarde: <span id="demo2"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="2" data-target="myRange2">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="2" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -101,7 +101,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange3" class="slider">
         <h4 id="demop">Waarde: <span id="demo3"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="3" data-target="myRange3">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="3" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -113,7 +113,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange4" class="slider">
         <h4 id="demop">Waarde: <span id="demo4"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="4" data-target="myRange4">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="4" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 		
@@ -125,7 +125,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange5" class="slider">
         <h4 id="demop">Waarde: <span id="demo5"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="5" data-target="myRange5">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="5" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -137,7 +137,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange6" class="slider">
         <h4 id="demop">Waarde: <span id="demo6"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="6" data-target="myRange6">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="6" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -149,7 +149,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange7" class="slider">
         <h4 id="demop">Waarde: <span id="demo7"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="7" data-target="myRange7">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="7" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -161,7 +161,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange8" class="slider">
         <h4 id="demop">Waarde: <span id="demo8"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="8" data-target="myRange8">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="8" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -173,7 +173,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange9" class="slider">
         <h4 id="demop">Waarde: <span id="demo9"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="9" data-target="myRange9">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="9" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -185,7 +185,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange10" class="slider">
         <h4 id="demop">Waarde: <span id="demo10"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="10" data-target="myRange10">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="10" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -197,7 +197,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange11" class="slider">
         <h4 id="demop">Waarde: <span id="demo11"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="11" data-target="myRange11">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="11" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -209,7 +209,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange12" class="slider">
         <h4 id="demop">Waarde: <span id="demo12"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="12" data-target="myRange12">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="12" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -221,7 +221,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange13" class="slider">
         <h4 id="demop">Waarde: <span id="demo13"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="13" data-target="myRange13">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="13" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -233,7 +233,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange14" class="slider">
         <h4 id="demop">Waarde: <span id="demo14"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="14" data-target="myRange14">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="14" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -245,7 +245,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange15" class="slider">
         <h4 id="demop">Waarde: <span id="demo15"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="15" data-target="myRange15">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="15" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -257,7 +257,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange16" class="slider">
         <h4 id="demop">Waarde: <span id="demo16"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="16" data-target="myRange16">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="16" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -269,7 +269,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange17" class="slider">
         <h4 id="demop">Waarde: <span id="demo17"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="17" data-target="myRange17">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="17" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -281,7 +281,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange18" class="slider">
         <h4 id="demop">Waarde: <span id="demo18"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="18" data-target="myRange18">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="18" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -293,7 +293,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange19" class="slider">
         <h4 id="demop">Waarde: <span id="demo19"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="19" data-target="myRange19">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="19" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -305,7 +305,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange20" class="slider">
         <h4 id="demop">Waarde: <span id="demo20"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="20" data-target="myRange20">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="20" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -317,7 +317,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange21" class="slider">
         <h4 id="demop">Waarde: <span id="demo21"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="21" data-target="myRange21">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="21" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -329,7 +329,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange22" class="slider">
         <h4 id="demop">Waarde: <span id="demo22"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="22" data-target="myRange22">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="22" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -341,7 +341,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange23" class="slider">
         <h4 id="demop">Waarde: <span id="demo23"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="23" data-target="myRange23">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="23" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 		
@@ -353,7 +353,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange24" class="slider">
         <h4 id="demop">Waarde: <span id="demo24"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="24" data-target="myRange24">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="24" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
 
@@ -365,7 +365,7 @@
 				<input type="range" min="0" max="10" value="1" id="myRange25" class="slider">
         <h4 id="demop">Waarde: <span id="demo25"></span></h4>
 
-        <button class="volgendeVraagButton" type="button" data-slide="25" data-target="myRange25">Volgende vraag</button>
+        <button class="volgendeVraagButton" type="button" data-slide="25" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
   
