@@ -11,4 +11,8 @@ class Result extends Model
     public function userresultaat(){
         return $this->hasMany('App\User','id','user_id');
     }
+    
+    public function symptoom() {
+        return $this->belongsTo('App\Result','resultaat_nummer','id');
+      }
 }

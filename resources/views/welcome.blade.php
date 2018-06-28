@@ -36,7 +36,10 @@
             @endif
 
 	<div id="tekst">
-	<h1> Medisch <br> Dagboek	</h1>
+
+ 
+  
+  <h1> Medisch <br> Dagboek	</h1>
 	</div>
     <div id="card">
 			<div id="content">
@@ -387,45 +390,115 @@
 		<div id="resultaat">
 			<div id="rapport">
 				<h1 id="medischrapport">Medisch Rapport</h1>
-				<table id="patient">
+				
+        <table id="patient">
 					<tr>
 						<th colspan="2">Patientinformatie</th>
+            <th colspan="2"></th>
 					</tr>
 					
 					<tr>
-						<td>Naam: {{Auth::user()->name}}</td>
-						<td>Datum: {{Auth::user()->created_at->format('m-d-Y')}}</td>
+						<td colspan="2">Naam: {{Auth::user()->name}}</td>
+						<td colspan="2">Datum: {{Auth::user()->created_at->format('m-d-Y')}}</td>
 					</tr>
 
 					<tr>
 						@if (Auth::user()->gender == 0)
-							<td>Geslacht: Man</td>
+							<td colspan="2">Geslacht: Man</td>
 						@else
-							<td>Geslacht: Vrouw</td>
+							<td colspan="2">Geslacht: Vrouw</td>
 						@endif
 						
-						<td>Geboortedatum: {{Auth::user()->birthdate}}</td>
+						<td colspan="2">Geboortedatum: {{Auth::user()->birthdate}}</td>
 					</tr>
 					<tr>
-						<td>Adres: {{Auth::user()->address}}</td>
-						<td>Huisarts: {{Auth::user()->huisarts}}</td>
+						<td colspan="2">Adres: {{Auth::user()->address}}</td>
+						<td colspan="2">Huisarts: {{Auth::user()->huisarts}}</td>
 					</tr>
 
 					<tr>
-						<td>Woonplaats: {{Auth::user()->city}}</td>
-						<td>Email: {{Auth::user()->email}}</td>
+						<td colspan="2">Woonplaats: {{Auth::user()->city}}</td>
+						<td colspan="2">Email: {{Auth::user()->email}}</td>
 					</tr>
 
-					<tr>
-						<th colspan="2">Uitslag Lymedagboek</th>
-					</tr>
-
-					<tr>
-						<td>Griepklachten</td>
-						<td>Pijnklachten</td>
-					</tr>
 					
-				</table>
+          
+          <table id="patient">
+              <tr>
+                <th colspan="2">Uitslag Lymedagboek</th>
+                <th colspan="2"></th>
+                <th colspan="2"></th>
+                <th colspan="2"></th>
+                <th colspan="2"></th>
+              </tr>
+              
+              <tr>
+                <td>Haaruitval</td>
+                <td>{{$vraag1}}</td>
+                <td>Kortademigheid, hoesten</td>
+                <td>{{$vraag6}}</td>
+                <td>Pijn in de borstkas, ribben</td>
+                <td>{{$vraag11}}</td>
+                <td>Spierkrampen</td>
+                <td>{{$vraag17}}</td>
+                <td>Gehoor beperking</td>
+                <td>{{$vraag21}}</td>
+              </tr>
+                      
+              <tr>
+                <td>Huiduitslag</td>
+                <td>{{$vraag2}}</td>
+                <td>Maagklachten, buikpijn</td>
+                <td>{{$vraag7}}</td>
+                <td>Pijn spieren/pezen</td>
+                <td>{{$vraag13}}</td>
+                <td>Zicht beperking</td>
+                <td>{{$vraag18}}</td>
+                <td>licht in het hoofd</td>
+                <td>{{$vraag22}}</td>
+              </tr>
+
+              <tr>
+                <td>Koorts</td>
+                <td>{{$vraag3}}</td>
+                <td>Veranderede stoelgang</td>
+                <td>{{$vraag8}}</td>
+                <td>Stijve gewrichten/rug</td>
+                <td>{{$vraag14}}</td>
+                <td>Overgevoelig voor licht</td>
+                <td>{{$vraag19}}</td>
+                <td>Verwardheid, aandachtsproblemen</td>
+                <td>{{$vraag23}}</td>
+              </tr>
+
+              <tr>
+                  <td>Koude rillingen</td>
+                  <td>{{$vraag4}}</td>
+                  <td>Onverklaarbare gewichtsveranderingen</td>
+                  <td>{{$vraag9}}</td>
+                  <td>Tintelingen/stekende pijn</td>
+                  <td>{{$vraag15}}</td>
+                  <td>Pijn/jeuk oren</td>
+                  <td>{{$vraag20}}</td>
+                  <td>Oriëntatie problemen</td>
+                  <td>{{$vraag24}}</td>
+              </tr>
+
+              <tr>
+                  <td>Pijklijke keel</td>
+                  <td>{{$vraag5}}</td>
+                  <td>Hartkloppingen</td>
+                  <td>{{$vraag10}}</td>
+                  <td>Spiertrekkingen</td>
+                  <td>{{$vraag16}}</td>
+                  <td>Pijn/jeuk oren</td>
+                  <td>{{$vraag20}}</td>
+                  <td>Geïrriteerde blaas</td>
+                  <td>{{$vraag25}}</td>
+              </tr>
+        
+        </table>
+       
 				
 				<div id="resultaatButton">
 					<button id="homeButton"><span>Terug naar homepage</span></button>
