@@ -122,6 +122,10 @@ nav.fill ul li a:hover:after {
   border-radius: 2px;
 }
 
+td.scorecijfer{
+  text-align: center;
+}
+
 #tekst{
   /* position: absolute; */
   /* top: 0; */
@@ -269,7 +273,7 @@ h6{
 #patient th{
 	padding-top: 12px;
 	padding-bottom: 12px;
-	text-align: center;
+	text-align: left;
 	background-color: lightgrey;
 	color: black;
 }
@@ -279,7 +283,7 @@ h6{
 }
 #patient td, #patient th{
 	padding: 8px;
-	border: 1px solid lightgrey;
+	/* border: 1px solid lightgrey; */
 }
 #resultaatButton{
   text-align: center;

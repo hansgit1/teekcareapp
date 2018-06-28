@@ -27,6 +27,7 @@ class ResultsController extends Controller
         $score = DB::table('results')->distinct()->get(['resultaat_nummer']);
         
         $user = Auth::id();
+        
         $vraag1 = DB::table('results')
             ->where('resultaat_nummer', 1)
             ->where('user_id', $user)

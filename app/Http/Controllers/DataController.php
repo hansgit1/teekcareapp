@@ -17,7 +17,7 @@ class DataController extends Controller
         $result->user_id = $request->uid;
         $result->score = $request->slider['value'];
         $success = $result->save();
-
+            
         $json = array(
             "result" => $result->resultaat_nummer,
             "score" => $result->score,

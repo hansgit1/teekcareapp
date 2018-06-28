@@ -438,67 +438,67 @@
               
               <tr>
                 <td>Haaruitval</td>
-                <td>{{number_format($vraag1)}}</td>
-                <td>Kortademigheid, hoesten</td>
-                <td>{{number_format($vraag6)}}</td>
+                <td class="scorecijfer">{{number_format($vraag1)}}</td>
+                <td>Kortademig<br>heid, hoesten</td>
+                <td class="scorecijfer">{{number_format($vraag6)}}</td>
                 <td>Pijn in de borstkas, ribben</td>
-                <td>{{number_format($vraag11)}}</td>
+                <td class="scorecijfer">{{number_format($vraag11)}}</td>
                 <td>Spierkrampen</td>
-                <td>{{number_format($vraag17)}}</td>
+                <td class="scorecijfer">{{number_format($vraag17)}}</td>
                 <td>Gehoor beperking</td>
-                <td>{{number_format($vraag21)}}</td>
+                <td class="scorecijfer">{{number_format($vraag21)}}</td>
               </tr>
                       
               <tr>
                 <td>Huiduitslag</td>
-                <td>{{number_format($vraag2)}}</td>
+                <td class="scorecijfer">{{number_format($vraag2)}}</td>
                 <td>Maagklachten, buikpijn</td>
-                <td>{{number_format($vraag7)}}</td>
+                <td class="scorecijfer">{{number_format($vraag7)}}</td>
                 <td>Pijn spieren/pezen</td>
-                <td>{{number_format($vraag13)}}</td>
+                <td class="scorecijfer">{{number_format($vraag13)}}</td>
                 <td>Zicht beperking</td>
-                <td>{{number_format($vraag18)}}</td>
+                <td class="scorecijfer">{{number_format($vraag18)}}</td>
                 <td>licht in het hoofd</td>
-                <td>{{number_format($vraag22)}}</td>
+                <td class="scorecijfer">{{number_format($vraag22)}}</td>
               </tr>
 
               <tr>
                 <td>Koorts</td>
-                <td>{{number_format($vraag3)}}</td>
+                <td class="scorecijfer">{{number_format($vraag3)}}</td>
                 <td>Veranderede stoelgang</td>
-                <td>{{number_format($vraag8)}}</td>
+                <td class="scorecijfer">{{number_format($vraag8)}}</td>
                 <td>Stijve gewrichten/rug</td>
-                <td>{{number_format($vraag14)}}</td>
+                <td class="scorecijfer">{{number_format($vraag14)}}</td>
                 <td>Overgevoelig voor licht</td>
-                <td>{{number_format($vraag19)}}</td>
-                <td>Verwardheid, aandachtsproblemen</td>
-                <td>{{number_format($vraag23)}}</td>
+                <td class="scorecijfer">{{number_format($vraag19)}}</td>
+                <td>Verwardheid, aandacht<br>sproblemen</td>
+                <td class="scorecijfer">{{number_format($vraag23)}}</td>
               </tr>
 
               <tr>
                   <td>Koude rillingen</td>
-                  <td>{{number_format($vraag4)}}</td>
-                  <td>Onverklaarbare gewichtsveranderingen</td>
-                  <td>{{number_format($vraag9)}}</td>
-                  <td>Tintelingen/stekende pijn</td>
-                  <td>{{number_format($vraag15)}}</td>
+                  <td class="scorecijfer">{{number_format($vraag4)}}</td>
+                  <td>Onverklaarbare gewichtsveran<br>deringen</td>
+                  <td class="scorecijfer">{{number_format($vraag9)}}</td>
+                  <td>Tintelingen/<br>stekende pijn</td>
+                  <td class="scorecijfer">{{number_format($vraag15)}}</td>
                   <td>Pijn/jeuk oren</td>
-                  <td>{{number_format($vraag20)}}</td>
+                  <td class="scorecijfer">{{number_format($vraag20)}}</td>
                   <td>Oriëntatie problemen</td>
-                  <td>{{number_format($vraag24)}}</td>
+                  <td class="scorecijfer">{{number_format($vraag24)}}</td>
               </tr>
 
               <tr>
                   <td>Pijklijke keel</td>
-                  <td>{{number_format($vraag5)}}</td>
+                  <td class="scorecijfer">{{number_format($vraag5)}}</td>
                   <td>Hartkloppingen</td>
-                  <td>{{number_format($vraag10)}}</td>
+                  <td class="scorecijfer">{{number_format($vraag10)}}</td>
                   <td>Spiertrekkingen</td>
-                  <td>{{number_format($vraag16)}}</td>
+                  <td class="scorecijfer">{{number_format($vraag16)}}</td>
                   <td>Pijn/jeuk oren</td>
-                  <td>{{number_format($vraag20)}}</td>
+                  <td class="scorecijfer">{{number_format($vraag20)}}</td>
                   <td>Geïrriteerde blaas</td>
-                  <td>{{number_format($vraag25)}}</td>
+                  <td class="scorecijfer">{{number_format($vraag25)}}</td>
               </tr>
         
         </table>
