@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/resultaten', function () {
+    return view('resultaten');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -32,4 +36,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'UserController@gegevens');
 Route::get('/', 'ResultsController@results');
+
 // Route::get('/', 'QuestionsController@questions');

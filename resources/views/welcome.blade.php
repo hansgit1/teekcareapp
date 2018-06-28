@@ -10,7 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-	<title>Teek Care</title>
+  <title>Teek Care</title>
+  
 </head>
 
 <body>
@@ -23,7 +24,7 @@
 			@if (Route::has('login'))
   		@auth
 				<li><a href="{{ route('logout') }}" >LOGOUT</a></li>
-				<li><a href="contact.asp">RESULTATEN</a></li>
+        <!-- <li><a href="{{ route('logout') }}">RESULTATEN</a></li> -->
 				<!-- <li><a href="default.asp">CONTACT</a></li> -->
 			</ul>
 		</div>
