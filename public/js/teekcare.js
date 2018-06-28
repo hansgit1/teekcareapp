@@ -239,8 +239,6 @@ $(document).ready(function() {
   output25.innerHTML = this.value;
   }
 
-  
-
   console.log(slider1.value, slider2.value);
    var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {

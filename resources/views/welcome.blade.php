@@ -24,9 +24,8 @@
   		@auth
 				<li><a href="{{ route('logout') }}" >LOGOUT</a></li>
 				<li><a href="contact.asp">RESULTATEN</a></li>
-				<li><a href="default.asp">CONTACT</a></li>
+				<!-- <li><a href="default.asp">CONTACT</a></li> -->
 			</ul>
-
 		</div>
         @else
 				<li><a href="{{ route('register') }}">REGISTREREN</a></li>
@@ -34,23 +33,24 @@
 					</div>
                   @endauth
             @endif
-
-	<div id="tekst">
-
- 
   
-  <h1> Medisch <br> Dagboek	</h1>
+  <div id="tekst">
+      <h1> Medisch <br> Dagboek	</h1>
 	</div>
+
     <div id="card">
 			<div id="content">
-	  		<h1 class="typewrite" data-period='100' data-set='["Goedendag", "Vandaag is het:"]' data-delay='3000' data-loop='false'></h1>
-	  			<div id="datum">
+	  		<!-- <h1 class="typewrite" data-period='100' data-set='["Goedendag", "Vandaag is het:"]' data-delay='3000' data-loop='true'></h1> -->
+        <p id="introtekst"><strong>Welkom op onze website!</strong> <br>De ziekte van Lyme is een ziekte die niet eenvoudig kan worden geconstateerd. Wij streven ernaar om voor u een zo duidelijk mogelijk overzicht te geven aan de hand van 25 symptomen. Het is een digitaal dagboek die u mee kunt nemen naar een afspraak met uw huisarts.</p>  
+        
+          <div id="datum">
 	  				<p id="dag"></p>
 	  				<p id="streepje">-</p>
 	  				<p id="maand"></p>
 	  				<p id="streepje">-</p>
 	  				<p id="jaar"></p>
-	  			</div>
+          </div>
+          
 				  @if (Route::has('login'))
                     @auth
 						<button id="dagboekButton"><span>VUL UW DAGBOEK IN</span></button>
@@ -62,7 +62,12 @@
             	@endif
 				</div>
     </div>
-	</div>
+<!--     
+    <div id="cardintro">
+      <h1>test</h1>
+    </div> -->
+  
+  </div>
 
 	@if (Route::has('login'))
 		@auth
@@ -76,10 +81,9 @@
         <h2>Hoeveel last heeft u van haaruitval?</h2>
         <br>
 				<input name = "score" type="range" min="0" max="10" value="1" id="myRange" class="slider">
-				<input name = "resultaat_nummer" type="hidden" value="1">
+        <input name = "resultaat_nummer" type="hidden" value="1">
 				<input name = "user_id" type="hidden">
         <h4 id="demop">Waarde: <span id="demo"></span></h4>
-				
 				<button class="volgendeVraagButton" type="button" data-slide="1" data-target="myRange">Volgende vraag</button>
       </div>
 		</div>
